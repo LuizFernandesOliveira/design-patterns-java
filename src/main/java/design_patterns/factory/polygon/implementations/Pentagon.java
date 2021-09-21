@@ -12,4 +12,11 @@ public class Pentagon implements Polygon {
   public Integer getSides() {
     return 5;
   }
+
+  @Override
+  public void drawPicture() {
+    System.out.println("  *  ");
+    System.out.println("*   *");
+    System.out.println(" * * ");
+  }
 }

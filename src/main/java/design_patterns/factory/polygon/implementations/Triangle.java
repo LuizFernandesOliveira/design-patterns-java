@@ -12,4 +12,11 @@ public class Triangle implements Polygon {
   public Integer getSides() {
     return 3;
   }
+
+  @Override
+  public void drawPicture() {
+    System.out.println("  *  ");
+    System.out.println(" * * ");
+    System.out.println("* * *");
+  }
 }

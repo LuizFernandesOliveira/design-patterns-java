@@ -12,4 +12,11 @@ public class Square implements Polygon {
   public Integer getSides() {
     return 4;
   }
+
+  @Override
+  public void drawPicture() {
+    System.out.println("* * *");
+    System.out.println("*   *");
+    System.out.println("* * *");
+  }
 }
