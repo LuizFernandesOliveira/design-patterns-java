@@ -6,8 +6,7 @@ import design_patterns.factory.polygon.PolygonType;
 
 public class App {
   public static void main(String[] args) {
-    Polygon polygon = PolygonFactory.create(PolygonType.PENTAGON
-    );
+    Polygon polygon = PolygonFactory.create(PolygonType.TRIANGLE);
 
     System.out.println("-----------------------------------------------");
     System.out.println("---------- PROPRIEDADES DO POLÍGONO -----------");
