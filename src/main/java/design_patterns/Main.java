@@ -1,21 +1,11 @@
 package design_patterns;
 
-import design_patterns.factory.polygon.implementations.Square;
-import design_patterns.factory.polygon.implementations.Triangle;
+import design_patterns.builder.polynomial.Polynomial;
 
 public class Main {
   public static void main(String[] args) {
-    Triangle triangle = new Triangle();
-    System.out.println("Nome:                    | " + triangle.getName());
-    System.out.println("Quantidade de Lados:     | " + triangle.getSides());
-    System.out.println("Quantidade de diagonais: | " + triangle.getDiagonals());
-    System.out.println("Figura:");triangle.drawPicture();
+    Polynomial polynomial = new Polynomial("2x^1", "5x^2", "1x^3", "3x^4", "4x^5", "7x^6", "2x^7", "2x^8", "6x^9", "8x^10");
 
-    Square square = new Square();
-    System.out.println("Nome:                    | " + square.getName());
-    System.out.println("Quantidade de Lados:     | " + square.getSides());
-    System.out.println("Quantidade de diagonais: | " + square.getDiagonals());
-    System.out.println("Figura:");square.drawPicture();
-
+    System.out.println(polynomial.toString());
   }
 }
