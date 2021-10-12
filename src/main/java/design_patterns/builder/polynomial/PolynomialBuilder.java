@@ -1,6 +1,6 @@
 package design_patterns.builder.polynomial;
 
-public class PolinomialBuilder {
+public class PolynomialBuilder {
   private String monomialDegree1;
   private String monomialDegree2;
   private String monomialDegree3;
@@ -12,52 +12,52 @@ public class PolinomialBuilder {
   private String monomialDegree9;
   private String monomialDegree10;
 
-  public PolinomialBuilder setMonomialDegree1(String monomial) {
+  public PolynomialBuilder setMonomialDegree1(String monomial) {
     this.monomialDegree1 = monomial;
     return this;
   }
 
-  public PolinomialBuilder setMonomialDegree2(String monomial) {
+  public PolynomialBuilder setMonomialDegree2(String monomial) {
     this.monomialDegree2 = monomial;
     return this;
   }
 
-  public PolinomialBuilder setMonomialDegree3(String monomial) {
+  public PolynomialBuilder setMonomialDegree3(String monomial) {
     this.monomialDegree3 = monomial;
     return this;
   }
 
-  public PolinomialBuilder setMonomialDegree4(String monomial) {
+  public PolynomialBuilder setMonomialDegree4(String monomial) {
     this.monomialDegree4 = monomial;
     return this;
   }
 
-  public PolinomialBuilder setMonomialDegree5(String monomial) {
+  public PolynomialBuilder setMonomialDegree5(String monomial) {
     this.monomialDegree5 = monomial;
     return this;
   }
 
-  public PolinomialBuilder setMonomialDegree6(String monomial) {
+  public PolynomialBuilder setMonomialDegree6(String monomial) {
     this.monomialDegree6 = monomial;
     return this;
   }
 
-  public PolinomialBuilder setMonomialDegree7(String monomial) {
+  public PolynomialBuilder setMonomialDegree7(String monomial) {
     this.monomialDegree7 = monomial;
     return this;
   }
 
-  public PolinomialBuilder setMonomialDegree8(String monomial) {
+  public PolynomialBuilder setMonomialDegree8(String monomial) {
     this.monomialDegree8 = monomial;
     return this;
   }
 
-  public PolinomialBuilder setMonomialDegree9(String monomial) {
+  public PolynomialBuilder setMonomialDegree9(String monomial) {
     this.monomialDegree9 = monomial;
     return this;
   }
 
-  public PolinomialBuilder setMonomialDegree10(String monomial) {
+  public PolynomialBuilder setMonomialDegree10(String monomial) {
     this.monomialDegree10 = monomial;
     return this;
   }

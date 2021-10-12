@@ -9,7 +9,7 @@ Ex.:
 polynomialDegree10 = "2x^1 + 3x^2 + 2x^3 + 7x^4 + 5x^5 + 5x^6 + 10x^7 + 2x^8 + 4x^9 + 3x^10";
 ````
 
-Podemos escrever um números polinomiais de quantos monômios quisermos (limitados a 10);
+Podemos escrever números polinomiais de quantos monômios quisermos (limitados a 10);
 
 Ex.: 
 ````javascript

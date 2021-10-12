@@ -1,5 +1,8 @@
 package design_patterns.builder.polynomial;
 
+import lombok.Builder;
+
+@Builder
 public class Polynomial {
   private final String monomialDegree1;
   private final String monomialDegree2;
