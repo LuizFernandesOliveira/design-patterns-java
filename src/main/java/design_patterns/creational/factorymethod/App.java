@@ -1,6 +1,6 @@
-package design_patterns.factorymethod;
+package design_patterns.creational.factorymethod;
 
-import design_patterns.factorymethod.operation.OperationType;
+import design_patterns.creational.factorymethod.operation.OperationType;
 
 import java.math.BigDecimal;
 import java.util.List;
