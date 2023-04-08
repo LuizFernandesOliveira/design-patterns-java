@@ -6,6 +6,6 @@ public class LinuxButton implements Button {
 
   @Override
   public void props() {
-    // TODO to implement
+    System.out.println("Linux button props");
   }
 }

@@ -6,6 +6,6 @@ public class WindowsButton implements Button {
 
   @Override
   public void props() {
-    // TODO to implement
+    System.out.println("Windows button props");
   }
 }

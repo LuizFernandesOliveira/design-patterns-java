@@ -6,6 +6,6 @@ public class LinuxCheckbox implements Checkbox {
 
   @Override
   public void props() {
-    // TODO to implement
+    System.out.println("Linux checkbox props");
   }
 }

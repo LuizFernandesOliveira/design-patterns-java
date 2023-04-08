@@ -6,6 +6,6 @@ public class WindowsCheckbox implements Checkbox {
 
   @Override
   public void props() {
-    // TODO to implement
+    System.out.println("Windows checkbox props");
   }
 }
