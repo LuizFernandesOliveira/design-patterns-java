@@ -7,13 +7,9 @@ import design_patterns.creational.abstractfactory.operationalsystem.implementati
 public class GUIFactory {
 
   public static GUI create(GUIType guiType, OSType osType) {
-    switch (guiType) {
-      case BUTTON:
-        return ButtonFactory.create(osType);
-      case CHECKBOX:
-        return CheckboxFactory.create(osType);
-      default:
-        throw new IllegalArgumentException("Unknown GUI type");
-    }
+    return switch (guiType) {
+      case BUTTON -> ButtonFactory.create(osType);
+      case CHECKBOX -> CheckboxFactory.create(osType);
+    };
   }
 }

@@ -7,13 +7,9 @@ import design_patterns.creational.abstractfactory.operationalsystem.implementati
 public class ButtonFactory {
 
   public static Button create(OSType type) {
-    switch (type) {
-      case WINDOWS:
-        return new WindowsButton();
-      case LINUX:
-        return new LinuxButton();
-      default:
-        throw new IllegalArgumentException("Invalid GUI type");
-    }
+    return switch (type) {
+      case WINDOWS -> new WindowsButton();
+      case LINUX -> new LinuxButton();
+    };
   }
 }

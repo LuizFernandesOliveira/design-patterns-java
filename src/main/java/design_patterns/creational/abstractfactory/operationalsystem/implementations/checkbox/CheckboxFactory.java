@@ -7,13 +7,9 @@ import design_patterns.creational.abstractfactory.operationalsystem.implementati
 public class CheckboxFactory {
 
   public static Checkbox create(OSType type) {
-    switch (type) {
-      case LINUX:
-        return new LinuxCheckbox();
-      case WINDOWS:
-        return new WindowsCheckbox();
-      default:
-        throw new IllegalArgumentException("Invalid GUI type");
-    }
+    return switch (type) {
+      case LINUX -> new LinuxCheckbox();
+      case WINDOWS -> new WindowsCheckbox();
+    };
   }
 }
