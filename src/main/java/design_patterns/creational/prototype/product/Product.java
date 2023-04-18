@@ -2,10 +2,11 @@ package design_patterns.creational.prototype.product;
 
 import java.time.Instant;
 
-public class Product implements Prototype<Product> {
+public class Product implements Cloneable {
   public String name;
   public int value;
   public Instant updatedAt;
+
 
   public Product(String name, int value, Instant updatedAt) {
     this.name = name;
