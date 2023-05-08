@@ -1,5 +1,6 @@
 package design_patterns.structural.adapter.api.service;
 
+import design_patterns.structural.adapter.api.repository.PaymentInterface;
 import design_patterns.structural.adapter.api.repository.PaymentRepository;
 import design_patterns.structural.adapter.api.repository.bb.BBRepository;
 import design_patterns.structural.adapter.api.repository.itau.ItauRepository;
@@ -8,6 +9,11 @@ public class PaymentService {
   private final BBRepository bbRepository = new BBRepository();
   private final ItauRepository itauRepository = new ItauRepository();
   private final PaymentRepository repository = new PaymentRepository();
+
+  public void create(PaymentInterface payment) {
+    processBusinessRules(payment);
+    repository.create(payment);
+  }
 
   public void create(PaymentInterface payment, BankType bankType) {
     processBusinessRules(payment);

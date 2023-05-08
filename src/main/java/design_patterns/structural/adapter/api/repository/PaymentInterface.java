@@ -1,9 +1,8 @@
-package design_patterns.structural.adapter.api.service;
+package design_patterns.structural.adapter.api.repository;
 
 import design_patterns.structural.adapter.api.repository.bb.BBInterface;
 import design_patterns.structural.adapter.api.repository.itau.ItauInterface;
 
-import java.math.BigDecimal;
 
 public record PaymentInterface(
     String account,

@@ -1,7 +1,5 @@
 package design_patterns.structural.adapter.api.repository;
 
-import design_patterns.structural.adapter.api.service.PaymentInterface;
-
 public class PaymentRepository {
 
   public void create(PaymentInterface payment) {
