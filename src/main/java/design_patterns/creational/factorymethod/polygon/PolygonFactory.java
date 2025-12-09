@@ -4,17 +4,11 @@ import design_patterns.creational.factorymethod.polygon.implementations.*;
 
 public class PolygonFactory {
   public static Polygon create(PolygonType polygonType) {
-
-    switch (polygonType) {
-      case SQUARE:
-        return new Square();
-      case PENTAGON:
-        return new Pentagon();
-      case HEXAGON:
-        return new Hexagon();
-      default:
-        return new Triangle();
-    }
-
+    return switch (polygonType) {
+      case SQUARE -> new Square();
+      case PENTAGON -> new Pentagon();
+      case HEXAGON -> new Hexagon();
+      default -> throw new IllegalArgumentException();
+    };
   }
 }
