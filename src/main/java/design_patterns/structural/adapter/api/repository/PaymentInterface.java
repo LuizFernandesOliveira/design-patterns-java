@@ -13,19 +13,19 @@ public record PaymentInterface(
 
   public BBInterface adaptToBB() {
     return new BBInterface(
-        account(),
-        agency(),
-        password(),
-        value()
+        account,
+        agency,
+        password,
+        value
     );
   }
 
   public ItauInterface adaptToItau() {
     return new ItauInterface(
-        account(),
-        agency(),
-        password(),
-        Float.parseFloat(value())
+        account,
+        agency,
+        password,
+        Float.parseFloat(value)
     );
   }
 }
